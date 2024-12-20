@@ -1,0 +1,20 @@
+{
+  "name": "jobplace",
+  "version": "1.0.0",
+  "description": "A Job posting platform made by WordPress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "start:hot": "wp-scripts start --hot"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/eslint-plugin": "^12.4.0",
+    "@wordpress/i18n": "^4.10.0",
+    "@wordpress/scripts": "^22.5.0",
+    "react-router-dom": "^6.3.0"
+  }
+}

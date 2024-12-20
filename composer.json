@@ -1,0 +1,49 @@
+{
+    "name": "akash/wp-react-kit",
+    "description": "A simple starter kit to work in WordPress plugin development using WordPress Rest API, WP-script and many more...",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "ManiruzzamanAkash",
+            "email": "manirujjamanakash@gmail.com"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7 || ^1.0",
+        "tareq1988/wp-php-cs-fixer": "dev-master",
+        "phpcompatibility/phpcompatibility-wp": "dev-master",
+        "wp-phpunit/wp-phpunit": "^6.0",
+        "yoast/phpunit-polyfills": "^1.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Akash\\JobPlace\\": "includes/",
+            "Akash\\JobPlace\\Tests\\": "tests/phpunit/"
+        }
+    },
+    "scripts": {
+        "phpcs": [
+            "phpcs -p -s"
+        ],
+        "phpcbf": [
+            "phpcbf -p"
+        ],
+        "test": [
+            "vendor/bin/phpunit"
+        ],
+        "test:all": [
+            "phpcs -p -s & vendor/bin/phpunit"
+        ]
+    }
+}
